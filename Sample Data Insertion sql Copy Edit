@@ -1,0 +1,23 @@
+-- Insert Students
+INSERT INTO Students (first_name, last_name, dob, email)
+VALUES 
+('John', 'Doe', '2002-05-14', 'john.doe@example.com'),
+('Alice', 'Smith', '2003-02-10', 'alice.smith@example.com');
+
+-- Insert Instructors
+INSERT INTO Instructors (name, department, email)
+VALUES 
+('Dr. Alan Turing', 'Computer Science', 'turing@example.com'),
+('Dr. Marie Curie', 'Physics', 'curie@example.com');
+
+-- Insert Courses
+INSERT INTO Courses (course_name, instructor_id)
+VALUES 
+('Data Structures', 1),
+('Quantum Mechanics', 2);
+
+-- Insert Enrollments
+INSERT INTO Enrollments (student_id, course_id, grade)
+VALUES 
+(1, 1, 'A'),
+(2, 2, 'B');
